@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Catalog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.gc
+		{
+			display:grid;
+			grid-template-columns:auto auto auto;
+			gap:20px;
+			justify-content:space-evenly;
+			background-color:#f699d2;
+		}
+		.card
+		{
+			width:20vw;
+			height:70vh;
+			border:10px groove #725fee;
+			background-color:#eae37b;
+			text-align:center;
+		}
+		.card img
+		{
+			width:100%;
+			height:50%;
+		}
+		.card h2
+		{
+			font-size:1.5vw;
+			background-color:#97dfce;
+			color:black;
+		}
+		.card h3
+		{
+			font-size:1vw;
+			background-color:rgb(173, 179, 90);
+			color:rgb(226, 32, 32);
+		}
+		.card p
+		{
+			font-size:0.5vm
+		}
+		.card button
+		{
+			background-color:rgb(93, 207, 207);
+		}
+		@media (max-width:700px)
+		{
+			.gc
+			{
+				display:grid;
+				grid-template-columns:auto;
+				gap:20px;
+				justify-content:space-evenly;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="gc">
+	<div class="card">
+		<img src="images\lipstick.png" alt="lipstick">
+		<h2>Lipstick</h2>
+		<h3><strike>Original price: 1500</strike> Discount price:999</h3>
+		<p>Lipstick with matte colors</p>
+		<button>Add to cart</button>
+	</div>
+	<div class="card">
+		<img src="images\eyeliner.webp" alt="eyeliner">
+		<h2>Eyeliner</h2>
+		<h3><strike>Original price: 1000</strike> Discount price:599</h3>
+		<p>Lakme EyeLiner</p>
+		<button>Add to cart</button>
+	</div>
+	<div class="card">
+		<img src="images\foundation.webp" alt="foundation">
+		<h2>Foundation</h2>
+		<h3><strike>Original price: 1600</strike> Discount price:999</h3>
+		<p>Foundation with skin tone</p>
+		<button>Add to cart</button>
+	</div>
+</div>
+<footer>
+	<h2 align="center">23B81A67B4</h2>
+</footer>
+</body>
+</html>

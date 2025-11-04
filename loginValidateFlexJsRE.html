@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <h3 align="right" style="color:blue;">23B81A67B4</h3>
+
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .fcontainer {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .item {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        .bt {
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        let uexp = /^[a-zA-Z_@.]+$/;
+        function validate() {
+            let u = document.getElementById("usr").value;
+            let p = document.getElementById("pwd").value;
+
+            if (u == "") {
+                alert("Please enter username");
+                return false;
+            }
+            else if (p == "") {
+                alert("Please enter password");
+                return false;
+            }
+            else if (p.length < 6) {
+                alert("Password should be at least 6 characters");
+                return false;
+            }
+            else if (uexp.test(u) == false) {
+                alert("Username should contain only alphabets, _, @ or .");
+                return false;
+            }
+            else {
+                alert("Validation Successful");
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2 align="center">Login Form</h2>
+    <form onsubmit="return validate()">
+        <div class="fcontainer">
+            <label>Username:</label>
+            <input class="item" type="text" id="usr">
+
+            <label>Password:</label>
+            <input class="item" type="password" id="pwd">
+
+            <input class="item bt" type="submit" value="Submit">
+            <input class="item bt" type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  Roll No: <input type="text" id="rollno"><br>
+  Name: <input type="text" id="name"><br>
+  Branch: <input type="text" id="branch"><br>
+  Year: <input type="text" id="year"><br>
+  CGPA: <input type="text" id="cgpa"><br>
+  <button onclick="submitForm()">Register</button>
+
+  <h3>Details:</h3>
+  <div id="result"></div>
+
+  <script>
+    function submitForm() {
+      var rollno = document.getElementById('rollno').value;
+      var name = document.getElementById('name').value;
+      var branch = document.getElementById('branch').value;
+      var year = document.getElementById('year').value;
+      var cgpa = document.getElementById('cgpa').value;
+
+      document.getElementById('result').innerHTML =
+        "Roll No: " + rollno + "<br>" +
+        "Name: " + name + "<br>" +
+        "Branch: " + branch + "<br>" +
+        "Year: " + year + "<br>" +
+        "CGPA: " + cgpa;
+    }
+  </script>
+</body>
+</html>

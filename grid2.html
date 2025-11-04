@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gc
+        {
+            display:grid;
+            height:100vh;
+            width:100vw;
+            grid-template-columns: 25% auto;
+            grid-template-rows: 2fr 4fr 1fr;
+            grid-template-areas: "h h"
+                                 "n a"
+                                 "f f";
+        }
+        header
+        {
+            grid-area:h;
+            background-color:orange;
+        }
+        nav
+        {
+            grid-area:n;
+            background-color: cyan;
+        }
+        article
+        {
+            grid-area: a;
+            background-color: pink;
+        }
+        footer
+        {
+            grid-area:f;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="gc">
+        <header>
+            <h1 align="center">HEADER</h1>
+        </header>
+        <nav>
+            <a href="login.html">LOGIN</a>
+            <a href="registration.html">REGISTRATION</a>
+        </nav>
+        <article>
+            <img src="./images/pokeman.jpg" width="400" height="400">
+        </article>
+        <footer>
+            <h2>@copyright 2025</h2>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <h3 color="blue" align="right">23B81A67B4</h3>
+        <style>
+            .fcontainer
+            {
+                display:flex;
+                flex-direction:column;
+                background-color:rgb(141, 217, 244);
+                border:10px groove rgb(255, 102, 0);
+                width:25%;
+                padding:15px;
+                margin:auto;
+                font-size:2vw;
+            }
+            .item
+            {
+                padding:10px;
+                margin:10px;
+            }
+            .bt
+            {
+                background-color:yellow;
+
+            }
+            .item:focus
+            {
+                background-color:pink;
+            }
+            body
+            {
+                margin :50px;
+                background-color : rgb(255, 192, 249);
+                font-size:25px;
+            }
+            h2
+            {
+                text-decoration:underline;
+                color : #e96cce;
+            }
+            label
+            {
+                font-weight: bold;
+                font-weight:20px;
+            }
+        </style>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h2 align="center"> Login Form </h2>
+        <form name="f1" action="" method="post">
+            <div class="fcontainer">
+                <div>
+                    <label class="item"> Username : </label>
+                    <input class="item" type="text" name="t1" placeholder="Enter your username">
+                </div>
+                <div>
+                    <label class="item"> Password  : </label>
+                    <input class="item" type="password" name="t2" placeholder="Enter your password">
+                </div>
+                <div>
+                    <input class="item bt" type="submit" value="submit">
+                    <input class="item bt" type="reset" value="clear">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
+

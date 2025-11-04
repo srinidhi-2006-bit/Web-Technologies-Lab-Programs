@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE books SYSTEM "books.dtd">
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="books.xsd">
+   <book isbn="123456">
+      <title>Web Technologies</title>
+      <author>John Duckett</author>
+      <publisher>TMH</publisher>
+      <edition>3</edition>
+      <price>500</price>
+   </book>
+   <book isbn="456789">
+      <title>Computer Networks</title>
+      <author>Tanenbaum</author>
+      <publisher>TMH</publisher>
+      <edition>7</edition>
+      <price>800</price>
+   </book>
+</books>

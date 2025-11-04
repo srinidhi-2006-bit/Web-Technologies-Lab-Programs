@@ -1,0 +1,8 @@
+<!ELEMENT catalog (book*)>
+<!ELEMENT book (title,author,publisher,edition,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST book isbn CDATA #REQUIRED>

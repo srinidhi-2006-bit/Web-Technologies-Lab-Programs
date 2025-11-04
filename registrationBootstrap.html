@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark" style="font-size:0.9vw">
+  <div class="container p-4 bg-info" style="width:45vw">
+    <form class="was-validated">
+      <h1 class="bg-warning text-dark text-center">REGISTRATION PAGE</h1>
+      
+      <div class="m-3">
+        <label class="form-label">Username:</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Please fill the username!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Password:</label>
+        <input type="password" class="form-control" required>
+        <div class="invalid-feedback">Please fill the password!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Confirm Password:</label>
+        <input type="password" class="form-control" required>
+        <div class="invalid-feedback">Password doesn't match!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Mobile No.:</label>
+        <input type="text" maxlength="10" class="form-control" required>
+        <div class="invalid-feedback">Incorrect mobile number!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Email:</label>
+        <input type="email" class="form-control" required>
+        <div class="invalid-feedback">Invalid email!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Date of Birth:</label>
+        <input type="date" class="form-control" required>
+        <div class="invalid-feedback">Invalid date!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Gender:</label><br>
+        <div class="form-check">
+          <input type="radio" name="m" value="male" class="form-check-input" required>
+          <label class="form-check-label">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="g" value="female" class="form-check-input" required>
+          <label class="form-check-label">Female</label>
+        </div>
+      </div>
+
+      <div class="m-3">
+        <label class="form-label">Address:</label>
+        <textarea name="ta" class="form-control" required></textarea>
+        <div class="invalid-feedback">Invalid!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">State:</label>
+        <select name="state" class="form-select" required>
+          <option></option>
+          <option>Telangana</option>
+          <option>Andhra Pradesh</option>
+        </select>
+      </div>
+      
+      <!--<div class="m-3">
+        <label class="form-label">City:</label>
+        <select name="city" class="form-select" required>
+          <option></option>
+          <option>Hyderabad</option>
+          <option>Mumbai</option>
+        </select>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Zipcode:</label>
+        <input type="text" maxlength="10" class="form-control" required>
+        <div class="invalid-feedback">Invalid!</div>
+      </div>
+      
+      <div class="m-3">
+        <label class="form-label">Upload Image:</label>
+        <input type="file" class="form-control" required>
+        <div class="invalid-feedback">Invalid!</div>
+      </div>
+      
+      <div class="m-3">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" required>
+          <label class="form-check-label">I agree to the terms and conditions</label>
+        </div>
+      </div>
+    -->
+      <div class="row m-3">
+        <div class="col"><input type="submit" value="Submit" class="form-control btn btn-primary"></div>
+        <div class="col"><input type="reset" value="Reset" class="form-control btn btn-danger"></div>
+      </div>
+    </form>
+  </div>
+  <footer class="bg-success text-center text-white p-2">23B81A67B4</footer>
+</body>
+</html>

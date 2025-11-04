@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructureobject</title>
+</head>
+<body>
+    <script>
+        const employee=
+        {
+            id:101,
+            name:"bob",
+            designation:"senior",
+            department:"cse-ds",
+            salary:90000
+        };
+         let {name,salary}=employee;
+        document.write("<br>name of the employee:"+name);
+        document.write("<br>salary of the employee:"+salary);
+        let {name:n,salary:s}=employee;
+        document.write("<br>name of the employee:"+n);
+        document.write("<br>salary of the employee:"+s);
+</script>
+</body>
+</html>
+
+<!--output:
+name of the employee:bob
+salary of the employee:90000
+name of the employee:bob
+salary of the employee:90000
+-->

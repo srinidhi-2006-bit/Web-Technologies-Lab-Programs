@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Features Demo</title>
+    <script>
+        // ----- Object Destructuring -----
+        const employee = {
+            id: 101,
+            name: "bob",
+            designation: "senior",
+            department: "cse-ds",
+            salary: 90000
+        };
+
+        let { name, salary } = employee;
+        document.write("<h3>Object Destructuring</h3>");
+        document.write("<br>Name of the employee: " + name);
+        document.write("<br>Salary of the employee: " + salary);
+
+        let { name: n, salary: s } = employee;
+        document.write("<br>Name of the employee: " + n);
+        document.write("<br>Salary of the employee: " + s);
+
+        // ----- Timer Events + Callback -----
+        function display() {
+            let d = new Date();
+            let t = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+            document.getElementById("i1").innerHTML = t;
+        }
+        setInterval(display, 1000); // executes every second
+    </script>
+</head>
+<body>
+    <h3>Timer Event & Callback Example</h3>
+    <h1 id="i1"></h1>
+</body>
+</html>
+
+

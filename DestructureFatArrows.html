@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Destructuring & Fat Arrow</title>
+</head>
+<body>
+    <h2>JavaScript: Destructuring & Fat Arrow</h2>
+    <script>
+        // Array Destructuring
+        const arr = [10, 20, 30];
+        let [x, y] = arr;
+        document.write("Array Destructuring: x = " + x + ", y = " + y + "<br>");
+
+        // Object Destructuring
+        const emp = { name: "Alice", salary: 50000 };
+        let { name, salary } = emp;
+        document.write("Object Destructuring: name = " + name + ", salary = " + salary + "<br>");
+
+        // Fat Arrow Function
+        const add = (a, b) => a + b;
+        document.write("Fat Arrow Function: 5 + 7 = " + add(5, 7));
+    </script>
+</body>
+</html>
+<!--
+output:
+JavaScript: Destructuring & Fat Arrow
+Array Destructuring: x = 10, y = 20
+Object Destructuring: name = Alice, salary = 50000
+Fat Arrow Function: 5 + 7 = 12 
+-->

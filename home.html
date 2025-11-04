@@ -1,0 +1,155 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>home page</title>
+  <h3 color="blue" align="right">23B81A67B4</h3>
+  <style>
+    .gc
+    {
+        display:grid;
+        height:100vh;
+        width:100vw;
+        grid-template-columns: 25% auto;
+        grid-template-rows: 2fr 4fr 1fr;
+        grid-template-areas: "h h"
+                              "n a"
+                              "f f";
+        height: 100vh;
+        gap: 10px;
+    }
+    header
+    {
+        grid-area:h;
+        background-color:orange;
+        font-weight: bold;
+        font-size:2vw;
+        display:flex;
+        align-items: center;
+        gap:800px;
+    }
+    nav
+    {
+        grid-area:n;
+        background-color: cyan;
+        padding: 15px;
+        max-width:100%;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    article
+    {
+        grid-area: a;
+        background-color: pink;
+        padding: 15px;
+        border-radius: 5;
+        max-width:100%;
+    }
+    footer
+    {
+        grid-area:f;
+        background-color: green;
+        padding: 10px 20px;
+       height:60px;
+    }
+    a
+    {
+        font-size:40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gc">
+    <header>
+        <img src="./images/ecommercelogo.webp"  width="100" height="100"alt="logo">
+        <h1>E-commerce Website</h1>
+    </header>
+    <nav>
+        <a href="login.html">Login</a><br><br><br><br>
+        <a href="registration.html">Register</a><br><br><br><br>
+        <a href=" ">Catalog</a>
+    </nav>
+    <article>
+        <h2>E-Commerce</h2>
+        <p>Electronic commerce, or e-commerce, is the buying and selling of goods and services over the internet.
+            E-commerce can be conducted on computers, tablets, smartphones, and other smart devices.
+            Nearly every imaginable product and service is now available through e-commerce, and it has upended
+            how many companies and entire industries do business.E-commerce is the process of conducting commercial
+            transactions online, which includes buying and selling products and services through various digital platforms.
+            This can occur via websites, mobile apps, social media, and online marketplaces. E-commerce has transformed how 
+            businesses operate, allowing them to reach a global audience and streamline their sales processes. 
+       </p>
+       <img src="./images/ecommerce.png" alt="L">
+    </article>
+    <footer>
+        <h2>my website @copyright 2025</h2>
+    </footer>
+  </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    .container 
+    {
+      display: grid;
+      grid-template-areas:
+        "h h"
+        "n m"
+        "f f";
+      grid-template-columns: 25% 75%;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+    }
+    header
+    { 
+        grid-area: h;
+        background: lightgray; 
+    }
+    nav 
+    { 
+        grid-area: n; 
+        background: lightblue; 
+    }
+    main
+    { 
+        grid-area: m;
+        background: lightpink; 
+    }
+    footer
+    { 
+        grid-area: f;
+        background: lightgreen; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>E-Commerce Website</h1>
+    </header>
+    <nav>
+      <a href="login.html">Login</a><br><br>
+      <a href="registration.html">Register</a><br><br>
+      <a href="catalog.html">Catalog</a>
+    </nav>
+    <main>
+      <h2>Welcome to Our Store</h2>
+      <p>
+        E-commerce (electronic commerce) is the process of buying and selling goods or services online.
+      </p>
+      <img src="./images/ecommerce.png" alt="E-Commerce" width="300">
+    </main>
+    <footer>
+      <p>© 2025 My Website</p>
+    </footer>
+  </div>
+</body>
+</html>

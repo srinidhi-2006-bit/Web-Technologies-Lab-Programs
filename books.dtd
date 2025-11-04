@@ -1,0 +1,9 @@
+<!ELEMENT books (book+)>
+<!ELEMENT book (title, author, publisher, edition, price)>
+<!ATTLIST book isbn CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+

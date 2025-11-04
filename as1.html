@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive web page</title>
+        <style> 
+        body 
+        { 
+           margin:0;
+           text-align:center;
+           padding:50px;
+           color:#fff;
+        } 
+        /* 0–576px */ 
+        body
+        { 
+            background:green; 
+        } 
+        /* 577–768px */
+        @media (min-width:577px) and (max-width:768px)
+        { 
+            body
+            { 
+                background: blue; 
+            } 
+        } 
+        /* 769–992px */
+        @media (min-width:769px) and (max-width:992px)
+        { 
+            body 
+            { 
+                background: purple; 
+            } 
+        } 
+        /* 993–1200px */ 
+        @media (min-width:993px) and (max-width:1200px)
+        { 
+            body
+            { 
+                background: orange; 
+            } 
+        } 
+        /* 1201–1400px */ 
+        @media (min-width:1201px) and (max-width:1400px) 
+        { 
+            body 
+            { 
+                background: red; 
+            } 
+        } 
+        </style> 
+    </head> 
+    <body> 
+        <h1>Responsive Web Page</h1> 
+    </body> 
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructurearray</title>
+</head>
+<body>
+        <script>
+        const arr1=[10,20,30,40,50,60,70];
+        let[a,b]=arr1;
+        document.write("value of a: "+a);
+        document.write("<br>value of b: "+b);
+        let[x,,y,,,z]=arr1;
+        document.write("<br>value of x: "+x);
+        document.write("<br>value of y: "+y);
+        document.write("<br>value of z: "+z);
+        let[,c,,d,...r]=arr1;
+        document.write("<br>value of c: "+c);
+        document.write("<br>value of d: "+r);
+        document.write("<br>value of r: "+r);
+        const calc=function(n1,n2)
+        {
+            s=n1+n2;
+            d=n1-n2;
+            m=n1*n2;
+            q=n1/n2;
+            return[s,d,m,q];
+        }
+        let[sum, ,product]=calc(2,13);
+        document.write("<br>sum is: "+sum);
+        document.write("<br>product is: "+product);
+        const arr2=[5,25];
+        let[a1,b1,c1]=arr2;
+        document.write("<br> value of a1: "+a1);
+        document.write("<br> value of b1: "+b1);
+        document.write("<br> value of c1: "+c1);
+    </script>
+</body>
+</html>
+
+<!--output:
+value of a: 10
+value of b: 20
+value of x: 10
+value of y: 30
+value of z: 60
+value of c: 20
+value of d: 50,60,70
+value of r: 50,60,70
+sum is: 15
+product is: 26
+value of a1: 5
+value of b1: 25
+value of c1: undefined
+--?

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a=()=>"Hello world";
+	document.write(a());
+	let x=10;
+	let y=20;
+	let f1=()=>x+y+10;
+	document.write("<br>"+f1());
+	let sq=n=>(n*n);
+	document.write("<br>"+sq(3));
+	let sum=(x1,x2)=>x1+x2;
+	document.write("<br>"+sum(12,5,34,50));
+	let pro=(b,c)=>{
+	document.write("<br>Value of b="+b);
+	document.write("<br>Value of c="+c);
+	return (b*c);
+	}
+	document.write("<br>"+pro(5,15));
+    </script>
+</body>
+</html>
+
+<!--Hello world
+40
+9
+17
+Value of b=5
+Value of c=15
+75-->

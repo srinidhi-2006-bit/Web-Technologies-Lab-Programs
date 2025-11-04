@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layout</title>
+        <style>
+        body
+        { 
+            margin: 0;
+            display: grid;
+            grid-template-areas:"h h" 
+                                "s m"
+                                "f f"; 
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+        } 
+        header
+        { 
+            grid-area: h;
+            background: gold;
+            padding: 20px;
+        }
+        aside
+        { 
+            grid-area: s;
+            background: deepskyblue;
+            padding: 20px;
+        } 
+        main
+        {
+            grid-area: m;
+            background: mediumseagreen;
+            padding: 20px;
+        } 
+        footer
+        { 
+            grid-area: f;
+            background: darkorange;
+            padding: 20px;
+        }
+        </style>
+    </head> 
+    <body> 
+        <header>Header</header> 
+        <aside> 
+            <ul> 
+                <li>Sidebar</li>
+            </ul> 
+        </aside>
+        <main> 
+            <h2>Welcome</h2> 
+            <p>Hi!</p> 
+        </main> 
+        <footer>Footer</footer> 
+    </body> 
+</html>
